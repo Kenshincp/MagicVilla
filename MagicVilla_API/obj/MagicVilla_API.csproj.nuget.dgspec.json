@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\c_mat\\source\\repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj": {}
+    "C:\\Users\\c_mat\\Source\\Repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\c_mat\\source\\repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj": {
+    "C:\\Users\\c_mat\\Source\\Repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\c_mat\\source\\repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
+        "projectUniqueName": "C:\\Users\\c_mat\\Source\\Repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
         "projectName": "MagicVilla_API",
-        "projectPath": "C:\\Users\\c_mat\\source\\repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
+        "projectPath": "C:\\Users\\c_mat\\Source\\Repos\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
         "packagesPath": "C:\\Users\\c_mat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\c_mat\\source\\repos\\MagicVilla\\MagicVilla_API\\obj\\",
+        "outputPath": "C:\\Users\\c_mat\\Source\\Repos\\MagicVilla\\MagicVilla_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\c_mat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

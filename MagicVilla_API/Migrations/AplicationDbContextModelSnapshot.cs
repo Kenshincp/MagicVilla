@@ -22,6 +22,31 @@ namespace MagicVilla_API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("MagicVilla_API.Models.NumberVilla", b =>
+                {
+                    b.Property<int>("VillaNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DetailSpecial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("VillaId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("dateCreate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("dateUpdate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("VillaNo");
+
+                    b.HasIndex("VillaId");
+
+                    b.ToTable("NumberVillas");
+                });
+
             modelBuilder.Entity("MagicVilla_API.Models.Villa", b =>
                 {
                     b.Property<int>("Id")
@@ -76,8 +101,8 @@ namespace MagicVilla_API.Migrations
                             Population = 5,
                             Rate = 100.0,
                             SquareMeter = 230,
-                            dateCreate = new DateTime(2024, 8, 2, 13, 20, 10, 598, DateTimeKind.Local).AddTicks(3268),
-                            dateUpdate = new DateTime(2024, 8, 2, 13, 20, 10, 598, DateTimeKind.Local).AddTicks(3282)
+                            dateCreate = new DateTime(2024, 8, 20, 19, 7, 28, 986, DateTimeKind.Local).AddTicks(3916),
+                            dateUpdate = new DateTime(2024, 8, 20, 19, 7, 28, 986, DateTimeKind.Local).AddTicks(3925)
                         },
                         new
                         {
@@ -89,9 +114,20 @@ namespace MagicVilla_API.Migrations
                             Population = 6,
                             Rate = 150.0,
                             SquareMeter = 210,
-                            dateCreate = new DateTime(2024, 8, 2, 13, 20, 10, 598, DateTimeKind.Local).AddTicks(3284),
-                            dateUpdate = new DateTime(2024, 8, 2, 13, 20, 10, 598, DateTimeKind.Local).AddTicks(3285)
+                            dateCreate = new DateTime(2024, 8, 20, 19, 7, 28, 986, DateTimeKind.Local).AddTicks(3927),
+                            dateUpdate = new DateTime(2024, 8, 20, 19, 7, 28, 986, DateTimeKind.Local).AddTicks(3928)
                         });
+                });
+
+            modelBuilder.Entity("MagicVilla_API.Models.NumberVilla", b =>
+                {
+                    b.HasOne("MagicVilla_API.Models.Villa", "Villa")
+                        .WithMany()
+                        .HasForeignKey("VillaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Villa");
                 });
 #pragma warning restore 612, 618
         }
